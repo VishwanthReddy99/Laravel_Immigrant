@@ -1,0 +1,132 @@
+
+<center >
+
+  <form action="Reports" method="Post">
+  <div style="padding-top:10%">
+    Select Your Country 
+    <select name="country" onchange="this.form.submit()">
+        <option value="" disabled selected>--select--</option>
+        <option value="all">all</option>
+
+        
+        <option value="India">India</option>
+        <option value="England">England</option>
+        <option value="United States of America">United States of America</option>
+        <option value="Sri Lanka">Sri Lanka</option>
+
+        <option value="Pakistan">Pakistan</option>
+
+    </select>
+    </div>
+
+
+</form>
+</center>
+
+
+<ul class="chart">
+    <li>
+        <center>
+            <h1> <?php echo (int)$Immigrants?></h1>
+        </center>
+
+            <span style="height:<?php echo (int)$Immigrants*10?>%" title="Immigirants"></span>
+
+    
+    </li>
+    <li>
+        <center>
+            <h1> <?php echo (int)$visitors ?></h1>
+        </center>
+      <span style="height:<?php echo 15?>%" title="Visitors"></span>
+    </li>
+   
+    
+  </ul>    
+<center>
+  <h3 class="grapdescr">The above graph shows the statstics related to number of Visitors and Immigirants</h3>
+ 
+
+</center>
+
+
+
+
+  <ul class="chart">
+    <li>
+        <center>
+            <h1> <?php echo $schools?></h1>
+        </center>
+
+            <span style="height:<?php echo (int)$schools*10?>%" title="No of Schools "></span>
+
+    
+    </li>
+    <li>
+        <center>
+            <h1> <?php echo $hospitals?></h1>
+        </center>
+      <span style="height:<?php echo (int)$hospitals*10?>%" title="No of Hospitals"></span>
+    </li>
+    <li>
+      <center>
+          <h1><?php echo $placestovisit?></h1>
+      </center>
+    <span style="height:<?php echo (int)$placestovisit*10?>%" title="No of Places to Visit"></span>
+  </li>
+   
+    
+  </ul>    
+  <center>
+    <h3 class="grapdescr">The above graph shows the statstics related to number of Schools,Hosiptals and Places to Visit in a particular Country</h3>
+   
+  
+  </center>
+  <center>
+    <h3 class="grapdescr">The above graph shows the statstics related to number of Visitors and Immigirants</h3>
+   
+  
+  </center>
+  
+
+  
+  
+    <ul class="chart">
+      <li>
+          <center>
+              <h1><?php echo $tips?></h1>
+          </center>
+  
+              <span style="height:<?php echo (int)$tips*10?>%" title="No of Tips "></span>
+  
+      
+      </li>
+      <li>
+          <center>
+              <h1><?php echo $contributions ?></h1>
+          </center>
+  
+              <span style="height:<?php echo (int)$contributions*10?>%" title="No of contributions "></span>
+  
+      
+      </li>
+
+     
+      
+    </ul>    
+    <center>
+      <h3 class="grapdescr">The above graph shows the statstics related to number of contributions and tips given by the immigrants to visitors per country</h3>
+     
+    
+    </center>
+  
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
